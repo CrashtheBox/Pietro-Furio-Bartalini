@@ -1,3 +1,4 @@
+/* Font Imports */
 @font-face {
     font-family: FontB;
     src: url('FON/AAfine.otf');
@@ -7,6 +8,7 @@
     src: url('FON/AAregular.otf');
 }
 
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
@@ -61,22 +63,18 @@ body, html {
     margin-left: 25%;
     justify-content: center;
     align-items: center;
-    
     height: 100%;
 }
 
 .main-content2 img {
-    
     width: 100%;
-
-
 }
+
 .main-contentbg {
     margin-left: 25%;
     justify-content: center;
     align-items: center;
     object-fit: cover;
-
 }
 
 .title {
@@ -96,12 +94,9 @@ body, html {
     margin-top: 20px;
 }
 
-
-
 .links a {
     text-decoration: none;
 }
- 
 
 .images {
     display: grid;
@@ -130,7 +125,7 @@ body, html {
     color: whitesmoke;
 }
 
- .highlight {
+.highlight {
     background-color: #3d3d3d;
     color: whitesmoke;
     margin-bottom: 10px;
@@ -146,7 +141,6 @@ body, html {
     display: inline-block;
     text-decoration: none;
     font-size: 10pt;
-
 }  
 
 .highlight3 {
@@ -173,8 +167,8 @@ body, html {
     color: whitesmoke;
     text-decoration: none;
     font-size: 15pt;
-
 }  
+
 .highlight6 {
     background-color: #3d3d3d;
     color: whitesmoke;
@@ -182,39 +176,32 @@ body, html {
     font-size: 10pt;
     margin-top: 10px;
     display: inline-block;
-
 }  
 
-
- .images iframe{
-
+.images iframe {
     width: 1080px;
-        height: 100vh;
-        border: none;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        display: block;
-        background-color: rgb(240, 240, 240);
+    height: 100vh;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: block;
+    background-color: rgb(240, 240, 240);
 }
-
-
 
 .instagram-feed {
     display: flex;
     flex-wrap: wrap;
 }
+
 .instagram-post {
     width: 200px;
     margin: 10px;
 }
+
 .instagram-post img {
     width: 100%;
 }
-
-
-
-
 
 .image {
     position: relative;
@@ -241,4 +228,43 @@ body, html {
 
 .image:hover .hover-text {
     opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #3d3d3d;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+    .main-content2 {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    .highlight4 {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
 }
